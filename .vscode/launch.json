@@ -1,0 +1,31 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Compound",
+      "configurations": ["Launch Chrome", "Start CRA"]
+    }
+  ],
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Start CRA",
+      "env": {
+        "BROWSER": "none"
+      },
+      "program": "${workspaceRoot}/node_modules/react-scripts/bin/react-scripts.js",
+      "args": ["start"]
+    },
+    {
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "pwa-chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
